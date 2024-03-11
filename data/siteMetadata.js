@@ -1,20 +1,20 @@
 const siteMetadata = {
-  title: 'Raphaël Chelly - Digital marketing project manager',
-  author: 'Raphaël Chelly',
-  headerTitle: 'Raphaël Chelly',
-  description: 'Portfolio of a digital marketing guy who codes a bit.',
-  language: 'en-us',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://www.raphaelchelly.com/',
-  siteRepo: 'https://github.com/raphaelchelly/raph_www',
-  siteLogo: '/static/images/raph-logo.png',
+  author: 'Udit Kaushik',
+  description: 'Portfolio of frontend developer.',
+  email: 'uditkaushik94@gmail.com',
+  github: 'https://github.com/udit1994',
+  headerTitle: 'Udit Kaushik',
   image: '/static/images/avatar.jpg',
-  socialBanner: '/static/images/twitter-card.png',
-  email: 'hi@raphaelchelly.com',
-  github: 'https://github.com/raphaelchelly',
-  twitter: 'https://twitter.com/raphael_chelly',
-  linkedin: 'https://www.linkedin.com/in/raphaelchelly',
+  language: 'en-us',
+  linkedin: 'https://www.linkedin.com/in/udkaushik/',
   locale: 'en-US',
+  siteLogo: '/static/images/logo.svg',
+  siteRepo: 'https://github.com/raphaelchelly/raph_www',
+  siteUrl: 'https://www.raphaelchelly.com/',
+  socialBanner: '/static/images/twitter-card.png',
+  theme: 'system',
+  title: 'Udit Kaushik - Frontend Developer',
+  twitter: 'https://twitter.com/uditdotdot',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -77,6 +77,11 @@ const siteMetadata = {
       shortname: process.env.NEXT_PUBLIC_DISQUS_SHORTNAME,
     },
   },
+  contentfulConfig: {
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    environment: process.env.CONTENTFUL_ENVIRONMENT,
+    space: process.env.CONTENTFUL_SPACE,
+  },
 };
 
-module.exports = siteMetadata;
+export default siteMetadata;

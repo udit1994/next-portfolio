@@ -55,6 +55,12 @@ const securityHeaders = [
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  experimental: {
+    concurrentFeatures: true,
+  },
+  images: {
+    domains: ['images.ctfassets.net'],
+  },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
